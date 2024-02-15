@@ -65,7 +65,7 @@ body {
     }
 
     #menu-toggle:checked + .menu-button-container .menu-button:nth-child(1) {
-        transform: rotate(-45deg) translate(-5px, 6px);
+        transform: rotate(45deg) scaleX(1.25);
     }
 
     #menu-toggle:checked + .menu-button-container .menu-button:nth-child(2) {
@@ -73,7 +73,8 @@ body {
     }
 
     #menu-toggle:checked + .menu-button-container .menu-button:nth-child(3) {
-        transform: rotate(45deg) translate(-5px, -6px);
+        transform-origin: 0% 100%;
+        transform: rotate(-45deg)  scaleX(1.25);
     }
 
     #menu-toggle:checked ~ .menu {
